@@ -26,3 +26,6 @@
 
     const greeting = ("Hello world!")
     console.log (`greeting -`, greeting)
+
+    const userAge = 12
+    console.log (`userAge -`, userAge)
