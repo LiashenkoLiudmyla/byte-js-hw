@@ -5,9 +5,10 @@
 // Подумайте, какие имена переменных будут максимально точно описывать хранимые значения.
 
 
-// const userAge
-// const userLastName
-// const userSurName
+const myAge = 45
+const myLastName = 'Liudmyla'
+const mySurName = 'Liashenko'
+console.log(`myLastName`,myLastName,`mySurName`,mySurName,`myAge`,myAge)
 
 
 

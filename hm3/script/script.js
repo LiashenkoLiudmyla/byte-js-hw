@@ -1,20 +1,39 @@
 
 //  ПЕРШЕ ЗАВДАННЯ
 
+// const a = 5;
+// const b = 10;
+
+// result = a + b;
+// console.log(`a + b =`, result);
+
+// result = a - b;
+// console.log(`a - b =`, result);
+
+// result = a * b;
+// console.log(`a * b =`, result);
+
+// result = a / b;
+// console.log(`a / b =`, result);
+
+
+
 const a = 5;
 const b = 10;
+const getSum = a + b;
+const getDifference = a - b;
+const getMultiplication = a * b;
+const getDivision = a / b;
 
-result = a + b;
-console.log(`a + b =`, result);
 
-result = a - b;
-console.log(`a - b =`, result);
+console.log(`getSum`, getSum);
+console.log(`getDifference`, getDifference);
+console.log(`getMultiplication`, getMultiplication);
+console.log(`getDivision`, getDivision);
 
-result = a * b;
-console.log(`a * b =`, result);
 
-result = a / b;
-console.log(`a / b =`, result);
+
+
 
 
 
@@ -22,8 +41,8 @@ console.log(`a / b =`, result);
 
 // true && true                               true 
 // false || true                              true 
-// true && 'false'                            true 
-// 0 && 1 || ' ' && 42                        '  ' 
+// true && 'false'                            false 
+// 0 && 1 || ' ' && 42                        '  '  тут не згодна, що передає 42
 // null == undefined                          true
 // '' == 0                                    true
 // 1 === '1'                                  false
@@ -39,11 +58,11 @@ console.log(`a / b =`, result);
 // ТРЕТЄ ЗАВДАННЯ
 
 
-const num1 =prompt("Enter any number");
- console.log(`num1`, num1);
+const num1 = prompt("Enter any number");
+//  console.log(`num1`, num1); 
 
 const num2 = prompt("Enter any number-2");
- console.log(`num2`, num2);
+//  console.log(`num2`, num2);
 
 if(num1 > num2){
     alert(`num1 більше ніж num2`)
