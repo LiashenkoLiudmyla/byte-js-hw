@@ -41,8 +41,8 @@ console.log(`getDivision`, getDivision);
 
 // true && true                               true 
 // false || true                              true 
-// true && 'false'                            false 
-// 0 && 1 || ' ' && 42                        '  '  тут не згодна, що передає 42
+// true && 'false'                            'false' 
+// 0 && 1 || ' ' && 42                        42 
 // null == undefined                          true
 // '' == 0                                    true
 // 1 === '1'                                  false
