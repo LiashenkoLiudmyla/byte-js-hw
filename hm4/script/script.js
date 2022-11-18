@@ -53,12 +53,14 @@ console.log(`sumResalt2`, sumResalt2); //щоб визвати декілька 
 // степень является НЕОБЯЗАТЕЛЬНЫМ аргументом, значением по умолчанию является число 2
 // функция должна вернуть результат операции
 
-function gradeNumber(m){
-    return  m*m;
+function gradeNumber(m, n=2){
+    return  m ** n;
+    // return Math.pow(m,n);
 }
-const gradeResalt = gradeNumber(4);
-
+const gradeResalt = gradeNumber(4); 
 console.log(`gradeResalt`, gradeResalt);
+const gradeResalt2 = gradeNumber(8,8); 
+console.log(`gradeResalt2`, gradeResalt2);
 
 
 // ЧЕТВЕРТЕ ЗАВДАННЯ
@@ -67,38 +69,59 @@ console.log(`gradeResalt`, gradeResalt);
 // Реализуйте функцию, которая будеи принимать в себя число от 1 до 7, а возвращать строку, которая будет собой представлять день недели.
 // В случае, если число не соответсвует дню недели, верните строку "Такого дня нет"
 
-const week = Number(prompt('введіть порядкове число дня тижня'));
+const userDay = Number(prompt('введіть порядкове число дня тижня'));
+
+const weekDay = (week) =>{
 switch (week){
     case 1:
-        console.log ("Понеділок");
-    break;
+        return ("Понеділок");
+    
     case 2:
-        console.log ("Вівторок");
-    break;
+        return("Вівторок");
+   
     case 3:
-        console.log ("Середа");
-    break;
+        return ("Середа");
+    
     case 4:
-        console.log ("Четвер");
-    break;
+        return ("Четвер");
+    
     case 5:
-        console.log ("П'ятниця");
-    break;
+        return ("П'ятниця");
+    
     case 6:
-        console.log ("Субота");
-    break;
+        return ("Субота");
+   
     case 7:
-        console.log ("Неділя");
-    break;
+        return ("Неділя");
+    
     default:
-        console.log('Немає такого дня')
+        return('Немає такого дня')
+    }
 }
 
+const dayRes = weekDay(userDay);
+console.log(dayRes);
 
 
+// Задание 5* (необязательное)
+// Написать функцию, которая будет спрашивать у пользователя его имя и возраст, и с помощью alert приветствовать его.
+// Далее, если возраст больше 30, то показать сообщение с приветсвием Здавствуйте, <Имя Пользователя>
+// Если меньше, сообщением будет Привет, <Имя Пользователя> (в треугольных скобках должно быть значение имени, введенной пользователем)
 
 
+function greetingUser(){
+    let userName = prompt ("Ведіть Ваше ім'я");
+    let userAge = Number(prompt("Введіть Ваш вік"));
 
+    if(userAge >30){
+        // alert ("Доброго дня, " + userName + "!");
+        return ("Доброго дня, " + userName + "!");
+    }else{
+        // alert ("Привіт, " + userName + "!");
+        return ("Привіт, " + userName + "!");
+    }
+}
+// greetingUser(); - визов функції
 
 
 
