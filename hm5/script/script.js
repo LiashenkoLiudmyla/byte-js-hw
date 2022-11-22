@@ -5,7 +5,7 @@
 
 
 
-// for (let i = 1; i < 11; i++){
+// for (let i = 1; i <= 10; i++){
 //     console.log( `Число і:`, i);
 // }
 
@@ -25,7 +25,7 @@
 
 
 // let i = 1;
-// while (i < 10) { 
+// while (i <= 10) { 
 // console.log (`i  `, i);
 //   i++;
 // }
@@ -40,7 +40,7 @@
 //   break;
 // }
 
-// let i = 21;
+// let i = 20;
 // do {
  
 //    i -=1;
@@ -179,8 +179,7 @@ do {
       
       { break;}
     }
-    
-                 
+                
     }
 
 }while(!isAuthSuccess);
