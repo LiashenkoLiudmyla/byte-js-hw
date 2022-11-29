@@ -15,7 +15,7 @@
 // Фу-ція, що перетворює імя в вірний формат
 const upperCaseString = (userString) => {
 
-    const firstSymbolString = (userString(0)).toUpperCase();
+    const firstSymbolString = (userString[0]).toUpperCase();  //[]
     const symbolsString = (userString.slice(1)).toLowerCase();
     return firstSymbolString + symbolsString;
 }
@@ -27,7 +27,8 @@ const userRegistrationName = () => {
 
     let userName
 
-    do{userName = prompt(`Ведіть ім'я: `)
+    do{
+        userName = prompt(`Ведіть ім'я: `)
     
     if(!userName){
         alert (`Введіть хочаб один символ`)
@@ -38,15 +39,17 @@ const userRegistrationName = () => {
 
 }while (true);
 
-const upperCaseName = upperCaseString (userName)
+const upperCaseName = upperCaseString(userName)
 
-return upperCaseName
+return upperCaseName;
 
-};
+}
 
 
 // Фу-ція, що запитує і перевіряє прізвище
 const userRegistrationLastName = () => {
+
+    let userLastName;
 
     do{
         userLastName = prompt(`Введіть Ваше прізвище: `);
@@ -58,16 +61,18 @@ const userRegistrationLastName = () => {
             break
         }
     }while(true);
-    const upperCaseLastName = upperCaseString(userLastName)
+
+    const upperCaseLastName = upperCaseString(userLastName);
+
     return upperCaseLastName
   
 }
 
 
 // Фу-ція, що запитує і перевіряє пароль
-const userRegistrationPassworrd = () => {
+const userRegistrationPassword = () => {
 
-   let userPassword 
+   let userPassword;
 
 
  do{
@@ -83,10 +88,13 @@ const userRegistrationPassworrd = () => {
         // userPassword.toLowerCase() === userPassword - перевірка строгого порівняння
         // userPassword.toLowerCase() - функція для того щоб привести введену строчку до нижнього реєстру
         // userPassword.toLowerCase() === userPassword -  приведена строка до нижного реєстра ===  паролю, що ввів користувач
+        
         alert (`Не коректний пароль`)
+
+    } else {
+        alert(`Реєстрація успішна!`);
         break
     }
-
 }while(true)
 return userPassword
 }
@@ -94,7 +102,7 @@ return userPassword
 
 const resName = userRegistrationName();
 const resLastName = userRegistrationLastName();
-const resPassword = userRegistrationPassworrd();
+const resPassword = userRegistrationPassword();
 
 
 alert (`Ви зареєстровані під імям:  ${resName} ${resLastName} Ваш пароль:  ${resPassword}`);
@@ -102,24 +110,24 @@ alert (`Ви зареєстровані під імям:  ${resName} ${resLastNa
 
 //АЛЬТЕРНАТИВНЕ РІШЕННЯ TASK1
 
-const askUserData = () => {
-    let userName
-    let userSurName
-    let itsNotOkey = true
+// const askUserData = () => {
+//     let userName
+//     let userSurName
+//     let itsNotOkey = true
 
-    do{
-         userName = promot(`Ведіть імя`)
-         userSurName = promot(`Введіть прізвище`)
-         userPassword = promot(`Введіть пароль`)
+//     do{
+//          userName = promot(`Ведіть імя`)
+//          userSurName = promot(`Введіть прізвище`)
+//          userPassword = promot(`Введіть пароль`)
 
-         itsNotOkey = validateData(userName, userSurName, userPassword )
+//          itsNotOkey = validateData(userName, userSurName, userPassword )
 
         
 
-    }while(itsOkey)
+//     }while(itsOkey)
         
-}
-askUserData()
+// }
+// askUserData()
 
 // Задание 2
 // Реализовать функцию - генератор случайных чисел в заданном промежутке
