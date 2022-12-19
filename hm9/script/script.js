@@ -60,16 +60,7 @@ const nameAdmin = adultAdmins
        
 
 
-
-
-
-
-
-
-
-
-
-// 1.2
+// 1.3
 // Дан массив чисел
 // С помощью метода reduce вычислите среднее арифметическое чисел в массиве.
 
@@ -82,6 +73,40 @@ const res = sum/length
 
 console.log(res)
 
+// 2 forEach
+
+// const names = ['Jhon', 'Ella', 'Peter', 'Leo'];
+
+// // names.forEach((name, i, arr) =>{
+// //     console.log(name, i, arr)
+// // });
+
+// const myForEach = function(arr, fn) {
+//     for(let i = 0; i < arr.length; i++ ) {
+       
+//         fn(arr[i], i, arr);
+//     }
+// };
+// myForEach(names, (name, i, arr) => {
+//     console.log(name, i, arr);
+// });
+
+
+
+
+const names = ['Jhon', 'Ella', 'Peter', 'Leo'];
+
+
+
+const myForEach = function(arr, fn) {
+    for(let i = 0; i < arr.length; i++ ) {
+       
+        fn(arr[i], i, arr);
+    }
+};
+myForEach(names, (name, i, arr) => {
+    console.log(name, i, arr);
+});
 
 
 
