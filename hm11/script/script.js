@@ -52,11 +52,14 @@ const renderProducts = (productsList) => {
     // console.log (productPropList);
 
 
-    productCont.properties.forEach((prop) => {
+    product.properties.forEach((prop) => {
       const listItem = document.createElement('li')
       listItem.innerText = prop;
 
       productPropList.append(listItem)
+
+
+    
 
       
     
@@ -82,7 +85,7 @@ const renderProducts = (productsList) => {
 }
 
 
-// renderProducts(products);
+ renderProducts(products);
 
 
 const renderProducts2 = (productsList) => {
@@ -114,4 +117,6 @@ const renderProducts2 = (productsList) => {
  `
  document.body.append(container)
 }
-renderProducts2(products)
+// renderProducts2(products)
+
+
