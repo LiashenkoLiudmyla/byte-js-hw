@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hm12_Js</title>
+
+
+    <style>
+        .button {
+            display: block;         
+            position: relative;
+            width: 300px;
+            padding: 15px;
+            margin: 0 auto;
+            background: rgb(225, 233, 166);
+            border-radius: 50px;
+           
+            color: rgb(65, 167, 6);
+            font-size: 24px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .tooltip {
+            position: absolute;
+            background: rgb(245, 245, 241);
+            border-radius: 5px;
+            font-family: Verdana;
+            font-size: 18px;
+            text-align: center;
+            padding: 10px;
+            /* opacity: 0; */
+        }
+
+        .tooltip::after {
+            content: '';
+            position: absolute;
+            border-top: 15px solid rgb(245, 245, 241);
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            top: 100%;
+            left: 45%;
+        }
+
+        
+    </style>
+
+</head>
+
+
+
+
+
+<body>
+    <button class="button">HW 12 </button>
+
+    
+    <script src="./script/script.js"></script>    
+</body>
+</html>
